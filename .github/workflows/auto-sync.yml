@@ -4,6 +4,7 @@ on:
   schedule:
     # Run every 15 minutes (good balance of frequency and API limits)
     - cron: '*/15 * * * *'
+    # For every 15 minutes, use: '*/15 * * * *'
   workflow_dispatch:  # Allow manual trigger
 
 permissions:
@@ -98,11 +99,12 @@ jobs:
             cp latest.json "archive/${TIMESTAMP}.json"
             echo "✅ Archived to archive/${TIMESTAMP}.json"
             
-            # Configure git (local to this repo)
+            # Configure git
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
             
-            # Stage generated files BEFORE pulling to prevent overwrites
+            # Stage ALL generated files BEFORE pulling to prevent
+            # "untracked working tree files would be overwritten" errors
             git add archive/
             if [ -f ftp_history.json ]; then
               git add ftp_history.json
@@ -117,7 +119,7 @@ jobs:
               echo "✅ Staged latest.json"
             fi
             
-            # Pull with autostash to reconcile concurrent runs
+            # Now pull - autostash will safely stash staged changes
             git pull --rebase --autostash origin main
             
             # Only commit if there are changes
@@ -140,27 +142,17 @@ jobs:
           if [ -f README.md ]; then
             echo "Current README content (first 5 lines):"
             head -5 README.md
-
-            # Configure git identity here as well
-            git config --local user.email "github-actions[bot]@users.noreply.github.com"
-            git config --local user.name "github-actions[bot]"
             
             if grep -q "Last successful sync:" README.md; then
               echo "Found existing timestamp line, updating..."
               sed -i "s/\*\*Last successful sync:\*\*.*/\*\*Last successful sync:\*\* ${SYNC_TIME}/" README.md
             else
               echo "No timestamp found, adding new line..."
-              sed -i "/badge.svg)/a\\
-\\
-**Last successful sync:** ${SYNC_TIME}\\
-" README.md
+              sed -i "/badge.svg)/a\\\n\*\*Last successful sync:\*\* ${SYNC_TIME}\n" README.md
             fi
             
             echo "Updated README content (first 5 lines):"
             head -5 README.md
-
-            # Pull with autostash to avoid diverging histories before commit
-            git pull --rebase --autostash origin main
             
             if ! git diff --quiet README.md; then
               git add README.md
@@ -170,8 +162,6 @@ jobs:
             else
               echo "⚠️ No changes detected in README"
             fi
-          else
-            echo "ℹ️ README.md not found, skipping timestamp update"
           fi
       
       - name: Show result
