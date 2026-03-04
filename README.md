@@ -1,6 +1,7 @@
 <p align="center">
-  https://raw.githubusercontent.com/valentinoavi46-dev/Training-data/main/logo.png
+  <img src="https://raw.githubusercontent.com/valentinoavi46-dev/Training-data/main/logo.png" width="220">
 </p>
+
 
 [![Licenza: CC BY-NC 4.0](https://img.shields.io/badge/Licenza-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
