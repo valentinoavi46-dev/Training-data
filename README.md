@@ -1,35 +1,35 @@
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![Licenza: CC BY-NC 4.0](https://img.shields.io/badge/Licenza-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
-# Training Data Pipeline
+# Pipeline Dati di Allenamento
 
-![Sync Status](https://github.com/valentinoavi46-dev/Training-data/actions/workflows/auto-sync.yml/badge.svg)
+![Stato Sync](https://github.com/valentinoavi46-dev/Training-data/actions/workflows/auto-sync.yml/badge.svg)
 
-**Last successful sync:** _updated automatically_
+**Ultima sincronizzazione riuscita:** _aggiornato automaticamente_
 
-Automated training data pipeline from [Intervals.icu](https://intervals.icu) for AI coaching analysis.
-Built on the [Section 11 Protocol](https://github.com/CrankAddict/section-11).
+Pipeline automatizzata dei dati da [Intervals.icu](https://intervals.icu) per analisi tramite AI coaching.
+Basata sul [Protocollo Section 11](https://github.com/CrankAddict/section-11).
 
-## Data URLs
+## URL dei Dati
 
-| File | Description | Link |
+| File | Descrizione | Link |
 |------|-------------|------|
-| `latest.json` | Current 7-day snapshot + derived metrics | [View](https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO_NAME/main/latest.json) |
-| `history.json` | Longitudinal data (daily/weekly/monthly) | [View](https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO_NAME/main/history.json) |
+| `latest.json` | Snapshot attuale di 7 giorni + metriche derivate | [Visualizza](https://raw.githubusercontent.com/valentinoavi46-dev/Training-data/main/latest.json) |
+| `history.json` | Dati longitudinali (giornalieri/settimanali/mensili) | [Visualizza](https://raw.githubusercontent.com/valentinoavi46-dev/Training-data/main/history.json) |
 
 ## Auto-Sync
 
-Data syncs every 15 minutes via GitHub Actions. The pipeline pulls activities, wellness, and planned workouts from the Intervals.icu API, calculates derived metrics (ACWR, monotony, polarization, phase detection), and generates graduated alerts.
+La sincronizzazione dei dati avviene ogni 15 minuti tramite GitHub Actions.  
+La pipeline recupera attività, wellness e workout programmati da Intervals.icu, calcola metriche derivate (ACWR, monotony, polarization, rilevamento della fase), e genera alert graduati.
 
-## AI Analysis
+## Analisi AI
 
 ```
-Analyze my training using these data files:
-- Current: https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO_NAME/main/latest.json
-- History: https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO_NAME/main/history.json
+Analizza i miei allenamenti usando questi file:
+- Corrente: https://raw.githubusercontent.com/valentinoavi46-dev/Training-data/main/latest.json
+- Storico: https://raw.githubusercontent.com/valentinoavi46-dev/Training-data/main/history.json
 ```
 
-For best results, pair with the [Section 11 instruction set](https://github.com/CrankAddict/section-11).
+Per risultati ottimali, abbina queste analisi al https://github.com/CrankAddict/section-11.
 
-## License
-
-[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — Free for personal and non-commercial use. Attribution required.
+## Licenza
+https://creativecommons.org/licenses/by-nc/4.0/ — Libero per uso personale e non commerciale. Attribuzione richiesta.
