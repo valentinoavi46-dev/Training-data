@@ -9,6 +9,9 @@
 
 ![Stato Sync](https://github.com/valentinoavi46-dev/Training-data/actions/workflows/auto-sync.yml/badge.svg)
 
+**Last successful sync:** 2026-03-04 11:52:36 UTC
+
+
 **Ultima sincronizzazione riuscita:** _aggiornato automaticamente_
 
 Pipeline automatizzata dei dati da [Intervals.icu](https://intervals.icu) per analisi tramite AI coaching.
