@@ -1,3 +1,7 @@
+<p align="center">
+  https://raw.githubusercontent.com/valentinoavi46-dev/Training-data/main/logo.png
+</p>
+
 [![Licenza: CC BY-NC 4.0](https://img.shields.io/badge/Licenza-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
 # Pipeline Dati di Allenamento
