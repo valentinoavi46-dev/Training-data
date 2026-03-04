@@ -3546,8 +3546,8 @@ class IntervalsSync:
                         stats["bail_no_match"] += 1
                 if summary:
                     stats["success"] += 1
-            elif evt.get("description", "").strip():
-                stats["bail_no_workout_doc"] += 1
+            elif evt.get("description") and isinstance(evt.get("description"), str) and evt.get("description").strip():
+
 
             # Parse NOTE: lines from description (v0.3 — coach annotations)
             raw_desc = evt.get("description", "")
