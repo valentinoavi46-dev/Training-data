@@ -9,10 +9,7 @@
 
 ![Stato Sync](https://github.com/valentinoavi46-dev/Training-data/actions/workflows/auto-sync.yml/badge.svg)
 
-**Last successful sync:** 2026-03-04 21:46:46 UTC
-
-
-**Ultima sincronizzazione riuscita:** _aggiornato automaticamente_
+**Ultima sincronizzazione riuscita:** 2026-03-04 21:46:46 UTC
 
 Pipeline automatizzata dei dati da [Intervals.icu](https://intervals.icu) per analisi tramite AI coaching.
 Basata sul [Protocollo Section 11](https://github.com/CrankAddict/section-11).
