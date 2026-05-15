@@ -41,8 +41,9 @@
 - **Phase classification (periodo attuale)**:
   - Costruzione aerobica + ~1 blocco settimanale di intensità/forza (Z4–Z5 power, hill repeats o sprint neuromuscolari).
 - **Short‑term race objectives**:
-  - **21 Marzo** — Campionati Italiani Duathlon Sprint (Imola)
-  - **18 Aprile** — Milano Olympic Triathlon
+  - **24 Maggio** — Triathlon Sprint di Salò
+  - **2 Giugno** — Campionati Italiani Triathlon Medio a Barberino
+  - **13 Giugno** — Triathlon Olimpico di Bardolino
 - **Seasonal objective (A‑goal)**:
   - Preparazione progressiva verso **70.3 nella seconda parte dell’anno**
 - **Performance targets**:
@@ -57,7 +58,7 @@
 ## 4. Health, Readiness & Limitations
 - **Infortuni attuali**: nessuno
 - **Storico rilevante**:
-  - Tendenza episodica a irritazione della **bandelletta ileotibiale** con alti volumi di corsa; attualmente stabile
+  - Tendenza episodica a irritazione della **bandelletta ileotibiale**; attualmente stabile
 - **Condizioni mediche**: nessuna
 - **Time constraints**:
   - Giorni feriali: disponibilità **post 18:00**, 60–90 min
