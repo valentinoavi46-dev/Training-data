@@ -9,7 +9,7 @@
 
 ![Stato Sync](https://github.com/valentinoavi46-dev/Training-data/actions/workflows/auto-sync.yml/badge.svg)
 
-**Last successful sync:** 2026-05-20 15:54:19 UTC
+**Last successful sync:** 2026-05-20 18:13:19 UTC
 
 
 **Ultima sincronizzazione riuscita:** 2026-03-04 21:46:46 UTC
