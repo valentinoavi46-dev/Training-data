@@ -14,7 +14,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-02T15:10:27.029618",
+    "last_updated": "2026-06-02T18:53:42.561795",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.7"
@@ -49,7 +49,7 @@
         "duration_decimal_hours": 2.26,
         "count": 2,
         "tss": 162,
-        "distance_km": 30.6
+        "distance_km": 30.8
       },
       "Swim": {
         "duration_decimal_hours": 1.52,
@@ -284,7 +284,7 @@
     "p_max": 964,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-02T15:10:27.028706",
+    "calculation_timestamp": "2026-06-02T18:53:42.560850",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -304,7 +304,7 @@
       "type": "Run",
       "name": "Training Session",
       "duration_hours": 1.48,
-      "distance_km": 19.81,
+      "distance_km": 19.96,
       "tss": 103,
       "intensity_factor": 83.333336,
       "avg_power": 375,
@@ -312,7 +312,7 @@
       "avg_hr": 167,
       "max_hr": 187,
       "avg_cadence": 87.180466,
-      "avg_speed": 13.4,
+      "avg_speed": 13.5,
       "max_speed": 17.1,
       "avg_pace": null,
       "avg_temp": 29.013147,
